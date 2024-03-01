@@ -1,3 +1,11 @@
-h1 {
-    color: #660033;
+h1, h2 {
+    color: #741a48;
+}
+
+.resume{
+    padding: 5px;
+    width: 27%;
+    border-style: dotted;
+    border-color: #741a48;
+    background-color: #ecdce5;
 }
