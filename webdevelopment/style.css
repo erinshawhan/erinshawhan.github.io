@@ -22,3 +22,7 @@ h1, h2, p, .resume{
 a{
     text-decoration: none;
 }
+
+header{
+    margin-top: 65px;
+}
