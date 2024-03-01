@@ -23,6 +23,6 @@ a{
     text-decoration: none;
 }
 
-header{
+header, footer{
     margin-top: 65px;
 }
