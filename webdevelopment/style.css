@@ -28,6 +28,10 @@ header{
 }
 
 footer{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: #ecdce5;
     margin-top: 30px;
 }
 
@@ -45,4 +49,32 @@ main p.first::first-letter {
 
 main p.indent{
     text-indent: 40px;
+}
+
+.photo-of-me{
+    width: 230px;
+    height: 300px;
+}
+
+.video-resume{
+    width: 230px;
+    height: 150px;
+}
+
+.about-text{
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+.about-media{
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 20% 60% 20%;
+    gap: 10px;
 }
