@@ -6,25 +6,28 @@
         Use: Reflect on professional and academic career, talk about career goals
         Author: Erin Shawhan
         School/Term: University of Missouri - Spring 2024
-        Developed: 3/9/24
-        Tested: 3/9/24
+        Developed: 3/23/24
+        Tested: 3/23/24
         -->
         <meta charset="utf-8">
         <title>Reflection</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id="menu-icon">&#9776;</label>
+        <nav id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a>
-                    <ul>
-                        <li class="dropdown"><a href="#">Link 1</a></li>
-                        <li class="dropdown"><a href="#">Link 2</a></li>
-                        <li class="dropdown"><a href="#">Link 3</a></li>
-                    </ul>
+                <ul>
+                    <li class="dropdown"><a href="#">Link 1</a></li>
+                    <li class="dropdown"><a href="#">Link 2</a></li>
+                    <li class="dropdown"><a href="#">Link 3</a></li>
+                </ul>
                 </li>
                 <li><a href="reflection.html">Reflection</a></li>
                 <li><a href="#contact.html">Contact</a></li>
@@ -34,43 +37,47 @@
             <h1>Erin Shawhan</h1>
         </header>
         <main>
-            <h2>Reflection</h2>
-            <p class="first">
-                When I think about my future, I see myself doing work that brings some benefit to people. 
-                I want to be able to create solutions to everyday problems and make people's lives easier. 
-                I have always been passionate about helping those that are often neglected and underrepresented. 
-                Specifically, I would like to work on increasing diversity and accessibility in the technology industry. 
-                Technology is a huge part of a lot of our lives, so it is important that it fits the needs of all kinds of people. 
-            </p>
-            <p class="indent">
-                Throughout my time at college, I have taken a diverse range of classes that have helped shape my skill set and goals. 
-                For my information technology major, I have been in courses covering programming, cybersecurity, media design, and web development. 
-                In the information technology field, there are so many career paths possible. 
-                As someone who loves to learn, I really appreciate the ability to explore many different topics. 
-                Being able to learn about the different areas of IT has helped me realize what I am passionate about and what I want to do in the future. 
-                I have acquired skills and knowledge that would make an asset in many industries. 
-                On top of my IT studies, I am also pursuing a minor in psychological sciences. 
-                I have always enjoyed learning about human psychology and I wanted to diversify my learning. 
-                I think that the ability to understand people of different walks of life is important in any industry. 
-                In the technology industry, every project is centered around a customer and a human problem. 
-                Because of this, I believe that studying psychology can be very beneficial as an individual in technology.
-            </p>
-            <p class="indent">
-                Aside from my academic journey, I have also gained useful experience throughout my employment history. 
-                I have a lot of experience in customer service and team oriented work environments. 
-                In my most recent job as a student research assistant, I primarily work alone or with one other person and complete a majority of my tasks on my own. 
-                These differing environments have allowed me to be able to thrive both on a team and independently. 
-                I have built strong skills such as teamwork, dependability, adaptability, and the ability to solve problems. 
-                In all of my jobs, I was expected to be a good communicator and be able to assist diverse groups of people. 
-                My work experiences have helped me develop crucial skills that I will be able to apply in my professional career. 
-            </p>
-            <p class="indent">
-                All of my academic and work experiences have helped shape me into the person I am now and have pushed me to continue pursuing my goals. 
-                By fine tuning my skills and gaining valuable knowledge, I am able to get closer to the future that I want. 
-                I have developed a range of both technical as well as soft skills that will help me have a wider perspective in my work. 
-                I hope to solve problems from both a logistical standpoint and a more human-centered point of view. 
-                My capabilities and education will allow me to reach my goal of making a positive impact on people's lives and I look forward to my future. 
-            </p>
+            <div class="reflection-container">
+                <h2 class="reflection-title">Reflection</h2>
+                <div class="refleciton-paragraph">
+                    <p class="first">
+                        When I think about my future, I see myself doing work that brings some benefit to people. 
+                        I want to be able to create solutions to everyday problems and make people's lives easier. 
+                        I have always been passionate about helping those that are often neglected and underrepresented. 
+                        Specifically, I would like to work on increasing diversity and accessibility in the technology industry. 
+                        Technology is a huge part of a lot of our lives, so it is important that it fits the needs of all kinds of people. 
+                    </p>
+                    <p class="indent">
+                        Throughout my time at college, I have taken a diverse range of classes that have helped shape my skill set and goals. 
+                        For my information technology major, I have been in courses covering programming, cybersecurity, media design, and web development. 
+                        In the information technology field, there are so many career paths possible. 
+                        As someone who loves to learn, I really appreciate the ability to explore many different topics. 
+                        Being able to learn about the different areas of IT has helped me realize what I am passionate about and what I want to do in the future. 
+                        I have acquired skills and knowledge that would make an asset in many industries. 
+                        On top of my IT studies, I am also pursuing a minor in psychological sciences. 
+                        I have always enjoyed learning about human psychology and I wanted to diversify my learning. 
+                        I think that the ability to understand people of different walks of life is important in any industry. 
+                        In the technology industry, every project is centered around a customer and a human problem. 
+                        Because of this, I believe that studying psychology can be very beneficial as an individual in technology.
+                    </p>
+                    <p class="indent">
+                        Aside from my academic journey, I have also gained useful experience throughout my employment history. 
+                        I have a lot of experience in customer service and team oriented work environments. 
+                        In my most recent job as a student research assistant, I primarily work alone or with one other person and complete a majority of my tasks on my own. 
+                        These differing environments have allowed me to be able to thrive both on a team and independently. 
+                        I have built strong skills such as teamwork, dependability, adaptability, and the ability to solve problems. 
+                        In all of my jobs, I was expected to be a good communicator and be able to assist diverse groups of people. 
+                        My work experiences have helped me develop crucial skills that I will be able to apply in my professional career. 
+                    </p>
+                    <p class="indent">
+                        All of my academic and work experiences have helped shape me into the person I am now and have pushed me to continue pursuing my goals. 
+                        By fine tuning my skills and gaining valuable knowledge, I am able to get closer to the future that I want. 
+                        I have developed a range of both technical as well as soft skills that will help me have a wider perspective in my work. 
+                        I hope to solve problems from both a logistical standpoint and a more human-centered point of view. 
+                        My capabilities and education will allow me to reach my goal of making a positive impact on people's lives and I look forward to my future. 
+                    </p><br><br><br><br>
+                </div>
+            </div>
         </main>
         <footer>
             <p>Erin Shawhan<br>
