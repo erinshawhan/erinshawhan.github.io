@@ -4,15 +4,16 @@ h1, h2 {
 
 .resume{
     padding: 5px;
-    width: 196px;
+    width: 221px;
     border-style: dotted;
     border-color: #741a48;
     background-color: #ecdce5;
+    margin-top: 40px;
 }
 
 body{
     margin: 0;
-    font-family: "Calibri", sans-serif;
+    font-family: rubik, sans-serif;
 }
 
 h1, h2, p, .resume{
@@ -41,14 +42,12 @@ main, header{
     margin-left: 20px;
     margin-right: 20px;
 }
-
 main p.first::first-letter {
     initial-letter: 2 1;
     color: #741a48;
     font-weight: bold;
     margin-right: .05em;
 }
-
 main p.indent{
     text-indent: 40px;
 }
@@ -56,11 +55,12 @@ main p.indent{
 .photo-of-me{
     width: 230px;
     height: 300px;
+    margin-top: -40px;
 }
-
 .video-resume{
     width: 230px;
     height: 150px;
+    margin-bottom: 30px;
 }
 
 /* about page */
@@ -174,15 +174,12 @@ main p.indent{
         width: 100%;
         float: none;
     }
-
     nav ul {
         display: none;
     }
-
     header{
         margin-top: 20px;
     }
-
     #menu-toggle:checked + label + nav ul {
         display: block;
         margin-top: 45px;
@@ -190,7 +187,6 @@ main p.indent{
         background-color: #ecdce5;
         width: 100%;
     }
-
     #menu-icon {
         display: inline-block;
         cursor: pointer;
@@ -200,20 +196,16 @@ main p.indent{
         color: #741a48;
         width: 100%;
     }
-
     #menu-toggle {
         display: none;
     }
-
     nav {
         text-align: left;
     }
-
     nav ul li {
         display: block;
         border: none;
     }
-
     #menu-toggle:checked + label + nav ul ul {
         display: none;
     }
@@ -243,8 +235,39 @@ main p.indent{
         display: flex;
         flex-direction: column;
     }
-    
     .project-container > * {
         margin-bottom: 20px;
-    } 
+    }
+}
+
+@font-face{
+    font-family: rubik;
+    src: url("Rubik-VariableFont_wght.ttf");
+}
+
+.education-details{
+    display: none;
+}
+.ed-list li, .ed-list ul{
+    display: block;
+    border: none;
+}
+
+@media print{
+    .about-media, .resume, #menu{
+        display: none;
+    }
+    footer{
+        background-color: white;
+        bottom: 0;
+    }
+    h1, h2, a{
+        color: black;
+    }
+    h1{
+        margin-top: 30px;
+    }
+    .education-details{
+        display: contents;
+    }
 }
