@@ -271,3 +271,7 @@ main p.indent{
         display: contents;
     }
 }
+
+.icon{
+    margin-bottom: -4px;
+}
