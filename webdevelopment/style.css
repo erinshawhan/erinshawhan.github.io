@@ -5,7 +5,7 @@ h1, h2 {
 .resume{
     padding: 5px;
     width: 221px;
-    border-style: dotted;
+    border-style: double;
     border-color: #741a48;
     background-color: #ecdce5;
     margin-top: 40px;
