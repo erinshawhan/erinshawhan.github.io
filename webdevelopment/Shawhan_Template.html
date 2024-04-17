@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <!--
-        Title: Template Page
-        Use: Template for easier creation of other web pages
-        Author: Erin Shawhan
-        School/Term: University of Missouri - Spring 2024
-        Developed: 4/6/24
-        Tested: 4/6/24
-        -->
+    <!--
+    Title: Home Page
+    Use: Provide an introduction to the website for users
+    Author: Erin Shawhan
+    School/Term: University of Missouri - Spring 2024
+    Developed: 4/13/24
+    Tested: 4/13/24
+    -->
         <meta charset="utf-8">
-        <title>Template</title>
+        <title>Home</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a>
+        <div class="head">
+            <header>
+                <h1 class="title">Erin Shawhan</h1>
+            </header>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menu-icon">&#9776;</label>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a>
                     <ul>
-                        <li class="dropdown"><a href="#">Link 1</a></li>
-                        <li class="dropdown"><a href="#">Link 2</a></li>
-                        <li class="dropdown"><a href="#">Link 3</a></li>
+                        <li class="dropdown"><a href="projects.html#game">Game</a></li>
+                        <li class="dropdown"><a href="projects.html#poster">Poster</a></li>
+                        <li class="dropdown"><a href="projects.html#animation">Animation</a></li>
                     </ul>
-                </li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Erin Shawhan</h1>
-        </header>
-        <main></main>
-        <footer>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+        </main>
+        <footer class="footer1">
             <p>Erin Shawhan<br>
                 <img class="icon" src="icons8-call-squared-48.png" alt="" height="18px" width="18px">
                 +1 888-888-8888<br>

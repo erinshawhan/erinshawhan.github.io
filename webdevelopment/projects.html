@@ -16,40 +16,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" id="menu-icon">&#9776;</label>
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a>
+        <div class="head">
+            <header>
+                <h1 class="title">Erin Shawhan</h1>
+            </header>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menu-icon">&#9776;</label>
+            <nav id="menu">
                 <ul>
-                    <li class="dropdown"><a href="projects.html#game">Game</a></li>
-                    <li class="dropdown"><a href="projects.html#poster">Poster</a></li>
-                    <li class="dropdown"><a href="projects.html#animation">Animation</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a>
+                    <ul>
+                        <li class="dropdown"><a href="projects.html#game">Game</a></li>
+                        <li class="dropdown"><a href="projects.html#poster">Poster</a></li>
+                        <li class="dropdown"><a href="projects.html#animation">Animation</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
                 </ul>
-                </li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1>Erin Shawhan</h1>
-        </header>
+            </nav>
+        </div>
         <main>
+            <h2 class="proj-title">Projects</h2>
             <div class="project-container">
                 <div id="game">
-                    <h2 class="heading1">C# Rock, Paper Scissors Game</h2>
+                    <h3 class="heading1">C# Rock, Paper Scissors Game</h2>
                     <iframe class="media1" width="533" height="300" src="https://www.youtube.com/embed/e0qRDLxmEgo?si=KePy6bMD2VWEKVQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="p1">This program written in C# runs a rock, paper, scissors game through the terminal where the user can play rock, paper, scissors with the computer. This project acted as my final project in my course covering programming paradigms. The program includes the ability to load game statistics from a .csv file and display the leaderboard to users. The program asks users their name and saves their data to the file. This project showcases my ability to code in the C# language, use object oriented programming, read and save data to a file, and handle exceptions in a computer program.</p>
                 </div>
                 <div id="poster">
-                    <h2 class="heading2">Poster Advertisement</h2>
+                    <h3 class="heading2">Poster Advertisement</h2>
                     <img class="media2" width="300" height="310" src="poster.png" alt="">
                     <p class="p2">This project includes a poster and a series of social media posts intended to advertise a fictional event. I completed this project as an assignment in my graphic design course. Both the poster and the sequence of posts utilize theories of visual design and marketing, including color theory, visual hierarchy, and typography. This project highlights my ability to use Adobe Illustrator and my skill in graphic design and UI/UX design concepts.</p>
                 </div>
                 <div id="animation">
-                    <h2 class="heading3">Animated Advertisement</h2>
+                    <h3 class="heading3">Animated Advertisement</h2>
                     <iframe class="media3" width="533" height="300" src="https://www.youtube.com/embed/Jq1WpzOMCew?si=tyFAKuAkkV9zAbl6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p class="p3">This is an animated video created through Adobe After Effects that uses various images edited with Adobe Photoshop. The video was made for an assignment I completed for one of my courses focused on digital media and design. The intent of the project was to create a short animated advertisement for a fictional game company to practice animation and digital branding. This project demonstrates my experience creating media for a digital platform that fits a certain brand. It also shows my abilities in animation, video editing, and photo editing.</p>
                 </div>
