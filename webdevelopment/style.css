@@ -94,16 +94,20 @@ main p.indent{
     margin-left: 10px;
     grid-template-columns: 1;
     grid-template-rows: 1;
+    padding-right: 10px;
 }
 .heading2{
     margin-left: 10px;
     grid-template-columns: 2;
     grid-template-rows: 1;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .heading3{
     margin-left: 10px;
     grid-template-columns: 3;
     grid-template-rows: 1;
+    padding-left: 25px;
 }
 .media1{
     grid-template-columns: 1;
@@ -111,6 +115,7 @@ main p.indent{
     max-width: 100%;
     width: auto\9;
     margin-left: 10px;
+    padding-right: 10px;
 }
 .media2{
     grid-template-columns: 2;
@@ -119,6 +124,8 @@ main p.indent{
     height: auto;
     width: auto\9;
     margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .media3{
     grid-template-columns: 3;
@@ -126,18 +133,23 @@ main p.indent{
     max-width: 100%;
     width: auto\9;
     margin-left: 10px;
+    padding-left: 25px;
 }
 .p1{
     grid-template-columns: 1;
     grid-template-rows: 3;
+    padding-right: 10px;
 }
 .p2{
     grid-template-columns: 2;
     grid-template-rows: 3;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .p3{
     grid-template-columns: 3;
     grid-template-rows: 3;
+    padding-left: 25px;
 }
 .project-container{
     margin-top: -15px;
@@ -150,7 +162,7 @@ main p.indent{
 }
 
 /* home page*/
-.home-title{
+/* .home-title{
     grid-template-columns: 1;
     grid-template-rows: 1;
 }
@@ -162,7 +174,7 @@ main p.indent{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 80%;
-}
+} */
 
 /* reflection page */
 .reflection-title{
@@ -209,7 +221,7 @@ main p.indent{
         cursor: pointer;
         font-size: 24px;
         padding: 10px;
-        margin-top: -16px;
+        margin-top: -18px;
         margin-right: -10px;
         background-color: #ecdce5;
         color: #741a48;
@@ -253,6 +265,16 @@ main p.indent{
     }
     .project-container > * {
         margin-bottom: 20px;
+    }
+    .heading1, .media1, .p1{
+        padding-right: 0;
+    }
+    .heading2, .media2, .p2{
+        padding-left: 0;
+        padding-right: 0
+    }
+    .heading3, .media3, .p3{
+        padding-left: 0;
     }
 }
 
@@ -304,4 +326,14 @@ main p.indent{
 
 main{
     margin-top: 20px;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    padding-bottom: 40px;
+}
+.home-title{
+    padding-top: 10px;
 }
