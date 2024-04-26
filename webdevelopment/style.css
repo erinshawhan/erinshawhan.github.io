@@ -11,6 +11,14 @@ h1, h2, h3 {
     margin-top: 40px;
 }
 
+iframe{
+    border: none;
+}
+
+form{
+    margin-left: 10px;
+}
+
 body{
     margin: 0;
     font-family: rubik, sans-serif;

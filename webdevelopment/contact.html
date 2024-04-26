@@ -6,11 +6,11 @@
     Use: Provide an introduction to the website for users
     Author: Erin Shawhan
     School/Term: University of Missouri - Spring 2024
-    Developed: 4/18/24
-    Tested: 4/18/24
+    Developed: 4/25/24
+    Tested: 4/25/24
     -->
         <meta charset="utf-8">
-        <title>Home</title>
+        <title>Contact</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,11 +35,23 @@
                     </ul>
                     </li>
                     <li><a href="reflection.html">Reflection</a></li>
-                    <li><a href="#contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <main>
+            <h2>Contact</h2>
+            <form action="mailto:ekshawhan@gmail.com?subject=Portfolio&nbsp;Website&nbsp;Contact" method="post" enctype="multipart/form-data">
+                <label for="first-name">First name:</label><br>
+                <input type="text" name="first-name" id="first-name" value="First name" required><br><br>
+                <label for="last-name">Last name:</label><br>
+                <input type="text" name="last-name" id="last-name" value="Last name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" value="Email" required><br><br>
+                <label for="message">Message:</label><br>
+                <input type="text" name="message" id="message" size="50" value="Type message here..." required><br><br>
+                <input type="submit" value="Send">
+            </form>
         </main>
         <footer class="footer1">
             <p>Erin Shawhan<br>
