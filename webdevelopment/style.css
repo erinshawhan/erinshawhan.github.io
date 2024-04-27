@@ -19,6 +19,26 @@ form{
     margin-left: 10px;
 }
 
+h3{
+    margin-left: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+
+td, th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 7px;
+}
+
+th{
+    background-color: #ecdce5;
+    color: #741a48;
+}
+
 body{
     margin: 0;
     font-family: rubik, sans-serif;
@@ -67,7 +87,7 @@ main p.indent{
 }
 
 .photo-of-me{
-    margin-top: -20px;
+    padding-top: 50px;
     max-width: 100%;
     height: auto;
     width: auto\9;
@@ -75,7 +95,6 @@ main p.indent{
 .video-resume{
     width: 230px;
     height: 150px;
-    margin-bottom: 30px;
 }
 
 /* about page */
