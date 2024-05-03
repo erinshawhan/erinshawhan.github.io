@@ -6,8 +6,8 @@
     Use: Provide an introduction to the website for users
     Author: Erin Shawhan
     School/Term: University of Missouri - Spring 2024
-    Developed: 4/25/24
-    Tested: 4/25/24
+    Developed: 5/3/24
+    Tested: 5/3/24
     -->
         <meta charset="utf-8">
         <title>Contact</title>
@@ -17,6 +17,24 @@
         <link rel="icon" href="logo2.png" type="image/x-icon">
     </head>
     <body>
+        <div class="breadcrumbs">
+            <SCRIPT LANGUAGE="JavaScript">
+                //Bread crumb script - Kevin Lynn Brown
+                //Duplicate directory names bug fix by JavaScriptKit.com
+                //Visit JavaScript Kit (http://javascriptkit.com) for script
+                
+                var path = "";
+                var href = document.location.href;
+                var s = href.split("/");
+                for (var i=2;i<(s.length-1);i++) {
+                path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+                }
+                i=s.length-1;
+                path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+                var url = window.location.protocol + "//" + path;
+                document.writeln(url);
+            </script>
+        </div>
         <div class="head">
             <header>
                 <h1 class="title">Erin Shawhan</h1>
@@ -40,20 +58,20 @@
             </nav>
         </div>
         <main>
-            <h2>Contact</h2>
+            <h2 class="contact">Contact</h2>
             <form action="mailto:ekshawhan@gmail.com?subject=Portfolio&nbsp;Website&nbsp;Contact" method="post" enctype="multipart/form-data">
                 <label for="first-name">First name:</label><br>
-                <input type="text" name="first-name" id="first-name" value="First name" required><br><br>
+                <input type="text" name="first-name" id="first-name" size="97" value="First name" required><br><br>
                 <label for="last-name">Last name:</label><br>
-                <input type="text" name="last-name" id="last-name" value="Last name" required><br><br>
+                <input type="text" name="last-name" id="last-name" size="97" value="Last name" required><br><br>
                 <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email" value="Email" required><br><br>
+                <input type="email" name="email" id="email" size="97" value="Email" required><br><br>
                 <label for="message">Message:</label><br>
-                <input type="text" name="message" id="message" size="50" value="Type message here..." required><br><br>
+                <textarea name="message" id="Message" cols="90" rows="10">Type message here...</textarea required><br><br>
                 <input type="submit" value="Send">
-            </form>
+            </form><br><br>
         </main>
-        <footer class="footer1">
+        <footer>
             <p>Erin Shawhan<br>
                 <img class="icon" src="icons8-call-squared-48.png" alt="" height="18" width="18">
                 +1 888-888-8888<br>

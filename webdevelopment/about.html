@@ -6,8 +6,8 @@
         Use: Introduce myself
         Author: Erin Shawhan
         School/Term: University of Missouri - Spring 2024
-        Developed: 4/18/24
-        Tested: 4/18/24
+        Developed: 5/3/24
+        Tested: 5/3/24
         -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +18,24 @@
         <link rel="icon" href="logo2.png" type="image/x-icon">
     </head>
     <body>
+        <div class="breadcrumbs">
+            <SCRIPT LANGUAGE="JavaScript">
+                //Bread crumb script - Kevin Lynn Brown
+                //Duplicate directory names bug fix by JavaScriptKit.com
+                //Visit JavaScript Kit (http://javascriptkit.com) for script
+                
+                var path = "";
+                var href = document.location.href;
+                var s = href.split("/");
+                for (var i=2;i<(s.length-1);i++) {
+                path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+                }
+                i=s.length-1;
+                path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+                var url = window.location.protocol + "//" + path;
+                document.writeln(url);
+            </script>
+        </div>
         <div class="head">
             <header>
                 <h1 class="title">Erin Shawhan</h1>
@@ -85,7 +103,7 @@
                             <td>May 2021</td>
                         </tr>
                         <tr>
-                            <td>Univeristy of Missouri - Columbia</td>
+                            <td>University of Missouri - Columbia</td>
                             <td>B.S. Information Technology</td>
                             <td>December 2025</td>
                         </tr>

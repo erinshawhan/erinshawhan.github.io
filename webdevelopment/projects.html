@@ -6,8 +6,8 @@
         Use: Presenting past projects/experience
         Author: Erin Shawhan
         School/Term: University of Missouri - Spring 2024
-        Developed: 4/18/24
-        Tested: 4/18/24
+        Developed: 5/3/24
+        Tested: 5/3/24
         -->
         <meta charset="utf-8">
         <title>Projects</title>
@@ -17,6 +17,24 @@
         <link rel="icon" href="logo2.png" type="image/x-icon">
     </head>
     <body>
+        <div class="breadcrumbs">
+            <SCRIPT LANGUAGE="JavaScript">
+                //Bread crumb script - Kevin Lynn Brown
+                //Duplicate directory names bug fix by JavaScriptKit.com
+                //Visit JavaScript Kit (http://javascriptkit.com) for script
+                
+                var path = "";
+                var href = document.location.href;
+                var s = href.split("/");
+                for (var i=2;i<(s.length-1);i++) {
+                path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+                }
+                i=s.length-1;
+                path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+                var url = window.location.protocol + "//" + path;
+                document.writeln(url);
+            </script>
+        </div>
         <div class="head">
             <header>
                 <h1 class="title">Erin Shawhan</h1>
@@ -45,7 +63,7 @@
                 <div id="game">
                     <h3 class="heading1">C# Rock, Paper Scissors Game</h3>
                     <iframe class="media1" width="533" height="300" src="https://www.youtube.com/embed/e0qRDLxmEgo?si=KePy6bMD2VWEKVQA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="p1">This C# program developed using the .NET framework runs a rock, paper, scissors game through the terminal where the user can play rock, paper, scissors against the computer. This game was created as my final project for one of my IT courses exploring programming paradigms. The program includes the ability to load game statistics from a .csv file and display the leaderboard to users. The program asks users to input their name and saves their scores, along with their name, to the csv file and updates the leaderboard statistics. This project showcases my ability to code in the C# language, use object oriented programming, read and save data to a file, and handle exceptions in a computer program.<br><br>This project was one of the first times I experimented with analyzing, displaying, and editing data from a csv file. I was able to learn valuable knowledge about user interaction and working with data through a computer program. If I were to complete a similar project today, I would work on adding a GUI (or Graphical User Interface). This would allow the user to communicate with the computer without having to use the terminal and make the program more user-friendly and visually appealing.</p>
+                    <p class="p1">This C# program developed using the .NET framework runs a rock, paper, scissors game through the terminal where the user can play rock, paper, scissors against the computer. This game was created as my final project for one of my IT courses exploring programming paradigms. The program includes the ability to load game statistics from a .csv file and display the leader board to users. The program asks users to input their name and saves their scores, along with their name, to the csv file and updates the leader board statistics. This project showcases my ability to code in the C# language, use object oriented programming, read and save data to a file, and handle exceptions in a computer program.<br><br>This project was one of the first times I experimented with analyzing, displaying, and editing data from a csv file. I was able to learn valuable knowledge about user interaction and working with data through a computer program. If I were to complete a similar project today, I would work on adding a GUI (or Graphical User Interface). This would allow the user to communicate with the computer without having to use the terminal and make the program more user-friendly and visually appealing.</p>
                 </div>
                 <div id="poster">
                     <h3 class="heading2">Poster Advertisement</h3>
