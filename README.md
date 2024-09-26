@@ -1,2 +1,1 @@
-# erinshawhan.github.io
-erinshawhan.github.io/webdevelopment
+# erinshawhan.github.io/webdevelopment
