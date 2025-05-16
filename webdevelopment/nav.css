@@ -2,7 +2,7 @@ nav {
     display: block;
     position: absolute;
     top: 80px;
-    background-color: #ecdce5;
+    background-color: #3E3239;
     margin-right: -10px;
     width: 100%;
 }
@@ -13,7 +13,7 @@ li{
     margin-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-color: #741a48;
+    border-color: #3E3239;
 }
 
 ul a:link {
@@ -22,14 +22,17 @@ ul a:link {
 }
 
 a{
-    color: #741a48;
+    color: #ECDCE5;
 }
   
 li:hover {
-    background-color: #ffffff;
+    background-color: #DFBACF;
     text-decoration: none;
 }
-    
+li:hover a{
+    color: #3E3239;
+}
+
 li > ul {
     display: none
 }
@@ -40,7 +43,7 @@ li:hover ul {
     left: 197px;
     top: 45px;
     width: 66px;
-    background-color:#ecdce5;
+    background-color:#009073;
     margin:0;
     border: none;
 }
@@ -48,7 +51,7 @@ li:hover ul {
 li:hover ul li a:link {
     margin-top: 10px;
     margin-bottom: -5px;
-    color: #741a48;
+    color: #ECDCE5;
     display: block;
     padding: 0;
     margin-left: -25px;
@@ -65,5 +68,6 @@ ul{
 
 nav ul ul li:hover{
     text-decoration: underline;
-    text-decoration-color: #741a48;
+    text-decoration-color: #3E3239;
+    color: #3E3239;
 }

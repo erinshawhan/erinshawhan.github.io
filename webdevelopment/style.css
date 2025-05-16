@@ -1,15 +1,31 @@
-h1, h2{
-    color: #741a48;
+body {
+    background-color: #ecdce5;
+}
+
+h1{
+    font-size: 3em;
+    color: #DFBACF;
     margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    font-size: 2em;
+    color: #009073;
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+blockquote, td {
+    color: #3E3239;
 }
 
 .resume{
     padding: 5px;
-    width: 221px;
-    border-style: double;
-    border-color: #741a48;
-    background-color: #ecdce5;
+    width: 100px;
+    border-color: #DFBACF;
+    background-color: #009073;
     margin-top: 40px;
+    text-align: center;
 }
 
 iframe{
@@ -22,7 +38,8 @@ form{
 
 h3{
     margin-left: 10px;
-    color: #741a48;
+    color: #3E3239;
+    font-weight: 500;
 }
 
 table{
@@ -31,14 +48,17 @@ table{
 }
 
 td, th{
-    border: 1px solid black;
     text-align: left;
-    padding: 7px;
+    padding: 10px;
+    padding-left: 15px;
 }
-
+td {
+    background-color: #DFBACF;
+}
 th{
-    background-color: #ecdce5;
-    color: #741a48;
+    background-color: #3E3239;
+    color: #ECDCE5;
+    font-weight: 500;
 }
 
 body{
@@ -48,6 +68,7 @@ body{
 
 p, .resume{
     margin: 10px;
+    color: #3E3239;
 }
 
 a{
@@ -55,33 +76,29 @@ a{
 }
 
 header{
-    background-color: #ecdce5;
+    background-color: #3E3239;
     top: 0;
     padding-top: 8px;
 }
 
 .head{
-    background-color: #ecdce5;
+    background-color: #3E3239;
 }
 
-footer{
+/* footer{
     display: block;
     position: absolute;
     width: 100%;
-    background-color: #ecdce5;
+    background-color: #009073;
     margin-top: 30px;
-}
-
-.contact{
-    padding-top: 10px;
-}
+} */
 
 .breadcrumbs{
     padding-left: 30px;
     padding-top: 10px;
-    background-color: #ecdce5;
+    background-color: #3E3239;
     font-size: small;
-    color: #741a48;
+    color: #3E3239;
 }
 
 main, header{
@@ -90,12 +107,16 @@ main, header{
 }
 main p.first::first-letter {
     initial-letter: 2 1;
-    color: #741a48;
-    font-weight: bold;
+    color: #3E3239;
+    font-size: larger;
+    font-weight: 500;
     margin-right: .05em;
 }
 main p.indent{
     text-indent: 40px;
+}
+main {
+    padding-top: 20px;
 }
 
 .photo-of-me{
@@ -108,6 +129,18 @@ main p.indent{
     height: 150px;
 }
 
+label{
+    color: #3E3239;
+}
+input{
+    margin-top: 10px;
+    color: #3E3239;
+}
+textarea{
+    margin-top: 10px;
+    border: #ECDCE5;
+}
+
 /* about page */
 .about-container{
     display: grid;
@@ -118,7 +151,6 @@ main p.indent{
 
 /* project page */
 .heading1{
-    margin-left: 10px;
     padding-right: 10px;
 }
 .heading2{
@@ -163,14 +195,8 @@ main p.indent{
     grid-template-columns: 38% 22% 38%;
     grid-template-rows: 7.5% 52.5% 40%;
 }
-.proj-title{
-    margin-top: 30px;
-}
 
 /* reflection page */
-.reflection-title{
-    margin-top: 30px;
-}
 .reflectioncontainer{
     display: grid;
     grid-template-columns: 100%;
@@ -196,7 +222,7 @@ main p.indent{
         display: block;
         margin-top: 45px;
         position: absolute;
-        background-color: #ecdce5;
+        background-color: #DFBACF;
         width: 100%;
         margin-left: -40px;
         padding-bottom: 2px;
@@ -208,8 +234,8 @@ main p.indent{
         padding: 10px;
         margin-top: -18px;
         margin-right: -10px;
-        background-color: #ecdce5;
-        color: #741a48;
+        background-color: #DFBACF;
+        color: #3E3239;
     }
     #menu-toggle {
         display: none;
@@ -275,7 +301,7 @@ main p.indent{
         display: none;
     }
     footer{
-        background-color: white;
+        background-color: #DFBACF;
         bottom: 0;
     }
     h1, h2, a{
@@ -311,7 +337,4 @@ main{
     max-width: 100%;
     height: auto;
     padding-bottom: 40px;
-}
-.home-title{
-    padding-top: 10px;
 }
