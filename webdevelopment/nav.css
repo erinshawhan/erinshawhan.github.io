@@ -48,7 +48,7 @@ li:hover ul {
     border: none;
 }
     
-li:hover ul li a:link {
+li:hover ul li a {
     margin-top: 10px;
     margin-bottom: -5px;
     color: #ECDCE5;
